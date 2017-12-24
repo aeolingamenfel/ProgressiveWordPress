@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm version --no-git-tag-version -f patch && mkdir -p dist; node build.js",
+    "compile": "mkdir -p dist; node build.js",
     "copy-static": "cp -r src/*.php dist/",
     "minify-css": "for file in src/*.css; do csso src/*.css dist/ -m file",
     "watch": "npm-watch"
